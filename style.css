@@ -1,14 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-   
     zoom: 98%;
 }
 
 :root {
     --primary-color: teal;
     --secondary-color: #ff8c00;
-    --tertiary-color: #39a6b2;
   }
 
 header {
@@ -70,17 +68,14 @@ section, footer {
 .section-title {
     font-size: 48px;
     color: white;
-    padding-bottom: 20px;
-    text-align: center;
     margin: 0 auto 35px auto;
-    width: 50%;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 .intro {
     padding: 30px;
     background-color: var(--secondary-color);
-    text-align: center;
 }
 
 
@@ -97,21 +92,20 @@ section, footer {
     zoom: 1%;
     border: 3px solid black;
     flex: 0.25 15%;
-   
 }
 
 .intro-statement {
     color: grey;
     font-size: 20px;
-    padding: 40px;
+    padding: 60px;
     margin: 0 auto;
     line-height: 1.5;
     flex: 1;
+    text-align: center;
 }
 
-
 .projects {
-    padding: 25px;
+    padding: 30px;
     background-color: var(--primary-color);
 }
 
@@ -132,6 +126,7 @@ section, footer {
 
 .projects-list img:hover{
     border: 10px solid orange;
+    width: 96%;
 }
 
 .project-name {
@@ -143,13 +138,10 @@ section, footer {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
 .contact {
     background-color: var(--secondary-color);
     padding: 25px;
 }
-
 
 .contact-info {
     display: flex;
@@ -208,11 +200,14 @@ footer div {
 }
 
 
+
+
+
+
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 
 @media screen and (max-width: 980px) {
     header {
-        padding-bottom: 0;
         justify-content: center;
         position: relative;
     }
@@ -223,55 +218,22 @@ footer div {
     }
 
     header nav ul {
-        margin-top: 20px;
+        margin-top: 25px;
         width: 100%;
         justify-content: center;
     }
 
     header nav ul li a {
-        font-size: 20px;
+        font-size: 25px;
     }
-
-     
-
-
-    
-        
 
     .intro-photo {
         flex: 1;
-
     }
-
-
-
 
     footer h2, footer div {
         text-align: center;
         width: 100%;
-    }
-
-    .hero-cta, .hero-form {
-        width: 100%;
-    }
-
-    .hero-cta {
-        text-align: center;
-    }
-
-    .section-title {
-        width: 80%;
-    }
-
-    .step h3 {
-        flex:  1 100%;
-        text-align: center;
-    }
-
-    .step-info {
-        display: block;
-        text-align: center;
-        
     }
 
     .projects-list {
@@ -283,56 +245,16 @@ footer div {
     }
 }
 
+
+
 @media screen and (max-width: 768px) {
-    section {
-        padding: 30px 15px;
-    }
-
-
-    .intro-content {
-        display: block;
-    }
-
-
     .intro-photo {
         zoom: 10%;
     }
-
-
-
-
-    .contact-info {
-        text-align: center;
-      }
-
-
 }
 
 @media screen and (max-width: 575px) {
-
-    .hero-form button {
-      width: 100%;
-    }
-  
-    .section-title {
-      width: 95%;
-    }
-  
-    .intro p {
-      width: 100%;
-    }
-  
     .projects-list {
-      flex: 0 100%;
-    }
-  
-    
-  
-    .contact-info > * {
-      flex: 0 100%;
-    }
-
-    .contact-form {
-        order: 3;
+      flex: 100%;
     }
   }
