@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+    zoom: 98%;
+}
+
+:root {
+    --primary-color: teal;
+    --secondary-color: #ff8c00;
+    --tertiary-color: #39a6b2;
+  }
+
+header {
+    padding: 40px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+header h1, h2 {
+    font-size: 36px;
+    text-shadow: 0 0 15px rgba(0 ,0 ,0 , 0.5);
+}
+
+header a {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 20px;
+    font-size: 25px;
+}
+
+
+header nav ul li a:hover {
+    background: orange; 
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.hero {
+    background-image: url(./images/IMG_0227-new.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: center;
+    height: 700px;
+}
+
+
+
+.section-title {
+    font-size: 48px;
+    color: white;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+}
+
+.intro {
+    padding: 30px;
+    background-color: var(--secondary-color);
+    border-top: 5px solid white;
+    text-align: center;
+
+
+}
+
+
+.intro-content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    
+}
+
+.intro-photo {
+    zoom: 1%;
+    border: 3px solid black;
+    flex: 0.25 15%;
+   
+}
+
+.intro-statement {
+    color: grey;
+    font-size: 20px;
+    padding: 40px;
+    margin: 0 auto;
+    line-height: 1.5;
+    flex: 1;
+}
+
+
+
+.projects {
+    padding: 25px;
+    background-color: var(--primary-color);
+    border-top: 5px white solid;
+
+}
+
+h3 {
+    margin: 0;
+    font-size: 2px;
+}
+
+
+
+.trainers {
+    
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projects-list {
+    background: #024e76;
+    color: #fce138;
+    flex: 1;
+    
+}
+
+.trainer-name {
+    color: white;
+    text-align: center;
+}
+
+.projects-list img {
+    width: 100%;
+
+}
+
+.trainer-bio {
+    padding: 25px;
+    line-height: 1.5;
+}
+
+
+
+.trainer-bio h3 {
+    font-size: 28px;
+}
+
+.trainer-bio h4 {
+    font-weight: lighter;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+
+.projects-list img:hover{
+    border: 10px solid orange;
+}
+
+.projects-list p {
+    font-size: 17px;
+    
+}
+
+
+
+.contact {
+    background-color: teal;
+    padding: 25px;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    
+}
+
+.contact-photo {
+    zoom: 15%;
+    border: 3px solid black;
+    flex: 0.25 15%;
+    align-items: center;
+}
+
+
+.contact h2 {
+    color: white;
+}
+
+iframe {
+    height: 400px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    
+}
+
+.contact-info > * {
+    flex: 1;
+    margin: 15px;
+    width: 100%;
+}
+
+
+.contact-info h3 {
+    color: white;
+    font-size: 32px;
+}
+
+.contact-details {
+    text-align: center;
+}
+
+.contact-info p, .contact-info address {
+    color: white;
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-style: normal;
+} 
+
+.contact-form input, .contact-form textarea {
+    border: 1px solid #024e76;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #024e76;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.contact-info a {
+    color: blue;
+}
+
+.flex-row {
+    display: flex;
+ 
+}
+
+footer {
+    background-color: orange;
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer h5 {
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+    text-align: center;
+}
+footer div{
+    line-height: 1.5;
+}
+
+footer a {
+    color: white;
+}
+
+
+.form-input {
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.form-input:focus {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.hero-form button {
+    border-radius: 15px;
+}
+
+.hero-form button:hover {
+    background-color: #39a6b2;
+}
+
+
+
+
+.contact-form input, .contact-form textarea {
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.contact-form button {
+    border-radius: 15px;
+}
+
+.contact-form button:hover {
+    color: #fce138;
+    background: #39a6b2;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+     
+
+
+    
+        
+
+    .intro-photo {
+        flex: 1;
+
+    }
+
+
+
+
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero-cta, .hero-form {
+        width: 100%;
+    }
+
+    .hero-cta {
+        text-align: center;
+    }
+
+    .section-title {
+        width: 80%;
+    }
+
+    .step h3 {
+        flex:  1 100%;
+        text-align: center;
+    }
+
+    .step-info {
+        display: block;
+        text-align: center;
+        
+    }
+
+    .projects-list {
+        flex: 0 70%;
+    }
+
+    footer {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
+
+
+    .intro-content {
+        display: block;
+    }
+
+
+    .intro-photo {
+        zoom: 10%;
+    }
+
+
+
+
+    .contact-info {
+        text-align: center;
+      }
+
+
+}
+
+@media screen and (max-width: 575px) {
+
+    .hero-form button {
+      width: 100%;
+    }
+  
+    .section-title {
+      width: 95%;
+    }
+  
+    .intro p {
+      width: 100%;
+    }
+  
+    .projects-list {
+      flex: 0 100%;
+    }
+  
+    
+  
+    .contact-info > * {
+      flex: 0 100%;
+    }
+
+    .contact-form {
+        order: 3;
+    }
+  }
