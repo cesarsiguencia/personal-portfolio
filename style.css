@@ -52,7 +52,7 @@ header nav ul li a:hover {
 }
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .hero {
@@ -63,7 +63,9 @@ body {
     height: 700px;
 }
 
-
+section, footer {
+    border-top: 5px solid white;
+}
 
 .section-title {
     font-size: 48px;
@@ -72,15 +74,13 @@ body {
     text-align: center;
     margin: 0 auto 35px auto;
     width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .intro {
     padding: 30px;
     background-color: var(--secondary-color);
-    border-top: 5px solid white;
     text-align: center;
-
-
 }
 
 
@@ -91,7 +91,6 @@ body {
     justify-content: center;
     align-items: center;
     flex: 1;
-    
 }
 
 .intro-photo {
@@ -111,24 +110,12 @@ body {
 }
 
 
-
 .projects {
     padding: 25px;
     background-color: var(--primary-color);
-    border-top: 5px white solid;
-
 }
 
-h3 {
-    margin: 0;
-    font-size: 2px;
-}
-
-
-
-.trainers {
-    
-    width: 100%;
+.all-projects { 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -136,57 +123,63 @@ h3 {
 
 .projects-list {
     background: #024e76;
-    color: #fce138;
-    flex: 1;
-    
-}
-
-.trainer-name {
-    color: white;
-    text-align: center;
+    flex: 1; 
 }
 
 .projects-list img {
     width: 100%;
-
 }
-
-.trainer-bio {
-    padding: 25px;
-    line-height: 1.5;
-}
-
-
-
-.trainer-bio h3 {
-    font-size: 28px;
-}
-
-.trainer-bio h4 {
-    font-weight: lighter;
-    font-size: 22px;
-    margin-bottom: 15px;
-}
-
 
 .projects-list img:hover{
     border: 10px solid orange;
 }
 
-.projects-list p {
-    font-size: 17px;
-    
+.project-name {
+    padding: 25px;
+    line-height: 1.5;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
 
 .contact {
-    background-color: teal;
+    background-color: var(--secondary-color);
     padding: 25px;
-    border-top: 5px solid white;
-    border-bottom: 5px solid white;
-    
 }
+
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px;
+    text-align: center
+}
+
+
+.contact-info h3 {
+    font-size: 30px;
+    color: white;
+}    
+
+
+.contact-info p {
+    color: white;
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-style: normal;
+} 
+
+
+.contact-info a {
+    color: blue;
+}
+
 
 .contact-photo {
     zoom: 15%;
@@ -195,129 +188,25 @@ h3 {
     align-items: center;
 }
 
-
-.contact h2 {
-    color: white;
-}
-
-iframe {
-    height: 400px;
-}
-
-.contact-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    
-}
-
-.contact-info > * {
-    flex: 1;
-    margin: 15px;
-    width: 100%;
-}
-
-
-.contact-info h3 {
-    color: white;
-    font-size: 32px;
-}
-
-.contact-details {
-    text-align: center;
-}
-
-.contact-info p, .contact-info address {
-    color: white;
-    margin: 20px 0;
-    line-height: 1.5;
-    font-size: 16px;
-    font-style: normal;
-} 
-
-.contact-form input, .contact-form textarea {
-    border: 1px solid #024e76;
-    display: block;
-    padding: 7px 15px;
-    font-size: 16px;
-    color: #024e76;
-    width: 100%;
-    margin-bottom: 15px;
-    margin-top: 5px;
-}
-
-.contact-info a {
-    color: blue;
-}
-
-.flex-row {
-    display: flex;
- 
-}
-
 footer {
-    background-color: orange;
+    background-color: var(--primary-color);
     width: 100%;
-    padding: 40px 35px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 0 40px 0;  
+    font-family: Arial, Helvetica, sans-serif; 
 }
 
 footer h5 {
-    color: #024e76;
-    font-size: 30px;
-    margin: 0;
-    text-align: center;
+    color: white;
+    font-size: 20px;
 }
-footer div{
+
+footer div {
     line-height: 1.5;
 }
 
-footer a {
-    color: white;
-}
-
-
-.form-input {
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.75);
-}
-
-.form-input:focus {
-    background-color: rgba(255, 255, 255, 1);
-}
-
-.hero-form button {
-    border-radius: 15px;
-}
-
-.hero-form button:hover {
-    background-color: #39a6b2;
-}
-
-
-
-
-.contact-form input, .contact-form textarea {
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.75);
-}
-
-.contact-form input:focus, .contact-form textarea:focus {
-    background-color: rgba(255, 255, 255, 1);
-}
-
-.contact-form button {
-    border-radius: 15px;
-}
-
-.contact-form button:hover {
-    color: #fce138;
-    background: #39a6b2;
-}
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 
