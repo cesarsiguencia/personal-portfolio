@@ -1,16 +1,12 @@
-# Run Buddy
+# Welcome to my personal portfolio repository!
 
-## Purpose
-A website that offers fitness training services.
+Here, you will see all my web projects I have produced through the Columbia University Web Development Bootcamp course. Please take a look through my website and contact me if you have any questions. I look forward to your response.
 
-## Built With
-* HTML
-* CSS
+### Website Link
 
-## Website
-https://lernantino.github.io/run-buddy/
 
-## Contribution
-Made with ❤️ by [your name]
 
-# Run Buddy Inc.
+### Screenshots 
+![Screenshot 1](/assets/screenshots/screenshot-top-part.jpeg)
+
+![Screenshot 2](/assets/screenshots/screenshot-bottom-part.jpeg)
