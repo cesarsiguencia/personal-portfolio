@@ -4,9 +4,9 @@ Here, you will see all my web projects I have produced through the Columbia Univ
 
 ### Website Link
 
-
+https://cesarsiguencia.github.io/personal-portfolio-website-samples/
 
 ### Screenshots 
-![Screenshot 1](/assets/screenshots/screenshot-top-part.jpeg)
+![Screenshot 1](/webpages-screenshot/portfolio-screenshot-1.jpeg)
 
-![Screenshot 2](/assets/screenshots/screenshot-bottom-part.jpeg)
+![Screenshot 2](/webpages-screenshot/portfolio-screenshot-2.jpeg)
