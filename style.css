@@ -9,6 +9,8 @@
     --secondary-color: #ff8c00;
   }
 
+/* header attributes */
+
 header {
     padding: 40px 40px;
     display: flex;
@@ -61,6 +63,8 @@ body {
     height: 700px;
 }
 
+/*sections begin here */
+
 section, footer {
     border-top: 5px solid white;
 }
@@ -73,6 +77,8 @@ section, footer {
     text-align: center;
 }
 
+/* Introduction */
+
 .intro {
     padding: 30px;
     background-color: var(--secondary-color);
@@ -83,7 +89,7 @@ section, footer {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex: 1;
 }
@@ -104,29 +110,32 @@ section, footer {
     text-align: center;
 }
 
+/* Projects section */
+
 .projects {
     padding: 30px;
     background-color: var(--primary-color);
-}
-
-.all-projects { 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+   
 }
 
 .projects-list {
-    background: #024e76;
-    flex: 1; 
+    width: 50%;
+    margin: 0 auto;
 }
 
-.projects-list img {
+/*Runbuddy Project, big thumbnail */
+
+.projects-big {
+    background: #024e76;
+    flex: 50%; 
+}
+
+.projects-big img, .projects-small img {
     width: 100%;
 }
 
-.projects-list img:hover{
+.projects-big img:hover , .projects-small img:hover{
     border: 10px solid orange;
-    width: 96%;
 }
 
 .project-name {
@@ -137,6 +146,21 @@ section, footer {
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/*smaller thumbnail projects */
+
+.all-projects { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;   
+}
+
+.projects-small {
+    background: #024e76;
+    flex: 1; 
+}
+
+/* Contact section */
 
 .contact {
     background-color: var(--secondary-color);
@@ -172,7 +196,6 @@ section, footer {
     color: blue;
 }
 
-
 .contact-photo {
     zoom: 15%;
     border: 3px solid black;
@@ -200,11 +223,9 @@ footer div {
 }
 
 
+/* CSS claims end here
 
-
-
-
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+/* Media query for smaller desktop screens */
 
 @media screen and (max-width: 980px) {
     header {
@@ -236,8 +257,8 @@ footer div {
         width: 100%;
     }
 
-    .projects-list {
-        flex: 0 70%;
+    .projects-small {
+        flex: 100%;
     }
 
     footer {
@@ -245,11 +266,16 @@ footer div {
     }
 }
 
-
+/* Smartphone and tablet screens */
 
 @media screen and (max-width: 768px) {
+    .intro-content{
+        flex
+    }
+    
     .intro-photo {
         zoom: 10%;
+        margin: 0 auto;
     }
 }
 
