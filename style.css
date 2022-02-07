@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    zoom: 98%;
 }
 
 :root {
@@ -43,7 +42,7 @@ header nav ul {
 
 header nav ul li a {
     padding: 20px;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 
@@ -53,6 +52,7 @@ header nav ul li a:hover {
 
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 
 .hero {
@@ -88,22 +88,23 @@ section, footer {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    flex: 1;
+
+
 }
 
 .intro-photo {
-    zoom: 1%;
+    zoom: 15%;
     border: 3px solid black;
-    flex: 0.25 15%;
+  
 }
 
 .intro-statement {
-    color: grey;
-    font-size: 20px;
+    color: white;
+    font-size: 22px;
     padding: 60px;
-    margin: 0 auto;
+    margin: 0 25px;
     line-height: 1.5;
     flex: 1;
     text-align: center;
@@ -114,22 +115,20 @@ section, footer {
 .projects {
     padding: 30px;
     background-color: var(--primary-color);
-   
 }
 
 .projects-list {
-    width: 50%;
-    margin: 0 auto;
+    margin: 25px 40px;
+    display: flex;
+    flex-wrap: wrap;
 }
-
-/*Runbuddy Project, big thumbnail */
 
 .projects-big {
     background: #024e76;
-    flex: 50%; 
+    flex: 1; 
 }
 
-.projects-big img, .projects-small img {
+.projects-big img {
     width: 100%;
 }
 
@@ -144,19 +143,6 @@ section, footer {
     text-align: center;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-/*smaller thumbnail projects */
-
-.all-projects { 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;   
-}
-
-.projects-small {
-    background: #024e76;
-    flex: 1; 
 }
 
 /* Contact section */
@@ -186,7 +172,7 @@ section, footer {
     color: white;
     margin: 20px 0;
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 22px;
     font-style: normal;
 } 
 
@@ -204,12 +190,16 @@ section, footer {
 
 footer {
     background-color: var(--primary-color);
-    width: 100%;
+    width: 100%; 
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.footer-style {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 40px 0 40px 0;  
-    font-family: Arial, Helvetica, sans-serif; 
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 0;
 }
 
 footer h5 {
@@ -217,14 +207,7 @@ footer h5 {
     font-size: 20px;
 }
 
-footer div {
-    line-height: 1.5;
-}
 
-
-/* CSS claims end here
-
-/* Media query for smaller desktop screens */
 
 @media screen and (max-width: 980px) {
     header {
@@ -247,30 +230,31 @@ footer div {
         font-size: 25px;
     }
 
-    .intro-photo {
-        flex: 1;
+    .intro-content{
+        flex-direction: column;
     }
 
-    footer h2, footer div {
+    .projects-big {
+        width: 100%; 
+    }
+
+
+    footer div {
         text-align: center;
         width: 100%;
     }
 
-    .projects-small {
-        flex: 100%;
-    }
-
     footer {
         justify-content: center;
+        line-height: 1.5;
     }
+
 }
 
 /* Smartphone and tablet screens */
 
 @media screen and (max-width: 768px) {
-    .intro-content{
-        flex
-    }
+   
     
     .intro-photo {
         zoom: 10%;
@@ -282,4 +266,9 @@ footer div {
     .projects-list {
       flex: 100%;
     }
+
+    header nav ul li {
+        margin: 5px 15px;
+    }
+
   }
