@@ -1,6 +1,6 @@
-# Welcome to my personal portfolio repository!
+# My personal portfolio 2021
 
-Here, you will see all my web projects I have produced through the Columbia University Web Development Bootcamp course. Please take a look through my website and contact me if you have any questions. I look forward to your response.
+Here is my very first web developer portfolio using HTML/CSS
 
 ### Website Link
 
