@@ -1,7 +1,9 @@
 # My personal portfolio 2021
 
-## * This is an outdated portfolio. Please visit my React portfolio instead.
-https://cesarsiguencia.github.io/my-react-portfolio/
+## * This is an outdated portfolio. Please visit my React portfolio instead. *
+React Portfolio: https://cesarsiguencia.github.io/my-react-portfolio/
+
+- - - - -
 
 Here is my very first web developer portfolio using HTML/CSS
 
